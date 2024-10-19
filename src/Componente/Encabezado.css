@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,7 +10,7 @@
     scroll-padding-top: 3rem;
 }
 
-:root{
+:root {
     --main-color: #f9ad08;
     --text-color: #fff;
     --other-color: #212121;
@@ -27,7 +27,7 @@ body {
     color: var(--text-color);
 }
 
-header{
+header {
     position: fixed;
     width: 100%;
     top: 0;
@@ -43,14 +43,17 @@ header{
 
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
-    background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%,#ffff00 30%);
+    background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%, #ffff00 30%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: transparent;    font-family: 'Script MT';
-    font-weight: 2000px;
+    color: transparent;    
+    font-family: 'Script MT';
+    font-weight: 900;
     margin: 0%;
     line-height: 1.5em;
+    cursor: pointer;
 }
 
 .log2 {
@@ -69,7 +72,7 @@ header{
     color: var(--main-color);
 }
 
-.navlist{
+.navlist {
     display: flex;
 }
 
@@ -79,18 +82,18 @@ header{
     font-size: var(--p-font);
     font-weight: 600;
     margin: 0 30px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
-.navlist a:hover{
+.navlist a:hover {
     color: var(--main-color);
 }
 
-.navlist a:active{
+.navlist a:active {
     color: var(--main-color);
 }
 
-.nav-icons{
+.nav-icons {
     display: flex;
     align-items: center;
     padding: 8px 15px;
@@ -99,16 +102,16 @@ header{
     box-shadow: #ff6e0d 0px 1px 25px;
 }
 
-.nav-icons i{
+.nav-icons i {
     vertical-align: middle;
     font-size: 25px;
     color: var(--bg-color);
     margin-right: 8px;
     margin-left: 5px;
-    transition: all 0.5 ease;
+    transition: all 0.5s ease;
 }
 
-#menu-icon{
+#menu-icon {
     font-size: 32px;
     color: var(--bg-color);
     z-index: 100001;
@@ -121,11 +124,67 @@ header{
     color: var(--text-color);
 }
 
-#menu-icon:hover{
+#menu-icon:hover {
     transform: scale(1.1);
     color: var(--text-color);
 }
 
+/* Estilos del modal */
+.modal {
+    display: none; /* Ocultar el modal por defecto */
+    position: fixed;
+    top: 10%; /* Ajusta la posición vertical */
+    right: 10%; /* Ajusta la posición horizontal */
+    width: 300px; /* Cambia el ancho a un tamaño más pequeño */
+    max-height: 70vh; /* Limita la altura máxima */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1000;
+    overflow: auto; /* Permite el desplazamiento si es necesario */
+    padding: 10px; /* Ajusta el espaciado interno */
+}
+
+.modal.visible {
+    display: block; /* Mostrar el modal si es visible */
+}
+
+button {
+    background-color: #4CAF50; /* Verde */
+    color: white; /* Texto blanco */
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+.checkbox-group {
+    margin-bottom: 10px; /* Espacio entre las cremas y el siguiente elemento */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    flex: 1; /* Hacer que los botones ocupen el mismo espacio */
+    margin: 0 5px; /* Margen entre botones */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Media queries */
 @media (max-width: 1545px) {
     header {
         padding: 22px 4%;
@@ -148,7 +207,7 @@ header{
     :root {
         --big-font: 4.5rem;
         --h2-font: 3.3rem;
-        --p-font:1.1rem;
+        --p-font: 1.1rem;
     }
     .home {
         height: 85vh;
@@ -162,7 +221,7 @@ header{
     .navlist {
         position: absolute;
         top: -1000px;
-        left:0;
+        left: 0;
         right: 0;
         display: flex;
         flex-direction: column;
@@ -179,28 +238,12 @@ header{
     .navlist.open {
         top: 100%;
     }
-    .home-img img {
-        width: 100%;
-        max-width: 470px;
-        height: auto;
-    }
 }
 
 @media (max-width: 1045px) {
     :root {
         --big-font: 3.3rem;
         --h2-font: 2rem;
-    }
-    .home-img img {
-        width: 100%;
-        max-width: 470px;
-        height: auto;
-    }
-    .home {
-        height: 70vh;
-    }
-    .container-box{
-        margin-top: 0.2rem;
     }
 }
 
@@ -209,71 +252,9 @@ header{
         --big-font: 5.3rem;
         --h2-font: 2rem;
     }
-    .home{
-        grid-template-columns: 1fr;
-        height: 135vh;
-        margin-bottom: 5rem;
-    }
-    .home-text {
-        padding-top: 60px;
-    }
-    .home-img {
-        text-align: center;
-    }
-    .about{
-        grid-template-columns: 1fr;
-    }
-    .about-img {
-        text-align: center;
-    }
 }
 
-@media (max-width: 678px) {
-    .home{
-        grid-template-columns: 1fr;
-        height: 118vh;
-        margin-bottom: 15rem;
-    }
-}
-
-@media (max-width: 665px) {
-    .home{
-        grid-template-columns: 1fr;
-        height: 118vh;
-        margin-bottom: 20rem;
-    }
-}
-@media (max-width: 520px) {
-    
-    .social i {
-        margin: 0 10px;
-    }
-    .contac-text p {
-        max-width: 100%;
-    }
-    .details {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 475px) {
-    :root {
-        --big-font:2.8rem;
-        --h2-font: 2rem;
-    }
-}
-
-@media (max-width: 440px) {
-    .home {
-        height: 20hv;
-        gap: 0.1rem;
-    }
-    .btn2 {
-        margin-top: 10px;
-    }
-}
-
-.scroll{
+.scroll {
     position: fixed;
     bottom: 2.2rem;
     border-top: 2rem;
@@ -285,4 +266,10 @@ header{
     background: var(--main-color);
     padding: 10px;
     border-radius: 2rem;
+}
+
+.crema-item {
+    color: black; /* Cambia esto al color que desees */
+    font-size: 1rem; /* Ajusta el tamaño si es necesario */
+    margin: 2px 0; /* Espaciado entre cada crema */
 }

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import Encabezado from "./Componente/Encabezado";
 import './Componente/Encabezado.css'
@@ -18,6 +18,15 @@ import ContadorVisitas from './Componente/ContadorVisitas';
 import './Componente/ContadorVisitas.css';
 
 function App() {
+
+
+  const [pedidos, setPedidos] = useState([]);
+
+  const onSelectHamburguesa = (hamburguesa) => {
+      setPedidos((prev) => [...prev, hamburguesa]);
+      console.log(`Hamburguesa seleccionada: ${hamburguesa}`);
+  };
+
 // Efecto de caida suave 
   useEffect(() => {
     const sr = ScrollReveal({
@@ -42,11 +51,11 @@ function App() {
 
   return (
     <>
-      <Encabezado />
+      <Encabezado pedidos={pedidos} onSelectHamburguesa={onSelectHamburguesa} />
       <Inicio />
       <Contenedor />
       <Nosotros />
-      <Tienda />
+      <Tienda onSelectHamburguesa={onSelectHamburguesa}  />
       <Clientes />
       <br/>
       <Contacto />

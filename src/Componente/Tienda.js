@@ -4,7 +4,7 @@ import hamb2 from '../img/hmbg2.jpg';
 import hamb3 from '../img/hmbg3.jpg';
 import hamb4 from '../img/hmbg4.jpg';
 import './Tienda.css'; 
-//Evento carrusel
+
 const imagenes = [
     { src: hamb1, alt: 'Hamburguesa de carne', nombre: 'Hamburguesa de carne', descripcion: 'Granjera Simple', precio: 'S/.25.00' },
     { src: hamb2, alt: 'Hamburguesa de Duo Carne', nombre: 'Hamburguesa de Duo Carne', descripcion: 'La Poderosa', precio: 'S/.35.00' },
@@ -12,7 +12,7 @@ const imagenes = [
     { src: hamb4, alt: 'Hamburguesa Vegana Veggie Clásico', nombre: 'Hamburguesa Vegana', descripcion: 'Veggie Clásico', precio: 'S/.30.00' }
 ];
 
-function Tienda() {
+function Tienda({ onSelectHamburguesa }) {
     const [indiceActual, setIndiceActual] = useState(0);
 
     const siguienteImagen = () => {
@@ -21,6 +21,11 @@ function Tienda() {
 
     const imagenAnterior = () => {
         setIndiceActual((prev) => (prev - 1 + imagenes.length) % imagenes.length);
+    };
+
+    const seleccionarHamburguesa = () => {
+        const hamburguesaSeleccionada = imagenes[indiceActual].nombre;
+        onSelectHamburguesa(hamburguesaSeleccionada);
     };
 
     return (
@@ -41,7 +46,7 @@ function Tienda() {
                             <h6>{imagenes[indiceActual].precio}</h6>
                         </div>
                         <div className="s-btn">
-                            <a href="https://wa.link/sol527">Pide ya!</a>
+                            <a href="#" onClick={seleccionarHamburguesa}>Agregar al pedido</a>
                         </div>
                     </div>
                     <div className="top-icon">

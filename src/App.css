@@ -41,12 +41,13 @@ header{
 
 .logo {
   display: flex;
+  justify-content: center;
   align-items: center;
   background: linear-gradient(#ff007a 15%, #ffaa00 25%, #61f908 40%,#ffff00 30%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;    font-family: 'Script MT';
-  font-weight: 2000px;
+  font-weight: 2000;
   margin: 0%;
   line-height: 1.5em;
 }
