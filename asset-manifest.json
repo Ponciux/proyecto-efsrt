@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/%3Cproyecto-efsrt%3E/static/css/main.8430d7b2.css",
-    "main.js": "/%3Cproyecto-efsrt%3E/static/js/main.20f268c6.js",
-    "static/js/453.edeae866.chunk.js": "/%3Cproyecto-efsrt%3E/static/js/453.edeae866.chunk.js",
-    "static/media/hamburguesa.png": "/%3Cproyecto-efsrt%3E/static/media/hamburguesa.656b761655e8b5ef5de6.png",
-    "static/media/icono burger.png": "/%3Cproyecto-efsrt%3E/static/media/icono burger.09bfd5f456b580c0f788.png",
-    "static/media/Debarrio.jpg": "/%3Cproyecto-efsrt%3E/static/media/Debarrio.85f57a3cc7b8b02dc9f5.jpg",
-    "static/media/hmbg1.jpg": "/%3Cproyecto-efsrt%3E/static/media/hmbg1.9101999ae87cc0deebf4.jpg",
-    "static/media/hmbg3.jpg": "/%3Cproyecto-efsrt%3E/static/media/hmbg3.8d835bca825ceb82368f.jpg",
-    "static/media/hmbg4.jpg": "/%3Cproyecto-efsrt%3E/static/media/hmbg4.85660be2057618284a35.jpg",
-    "static/media/hmbg2.jpg": "/%3Cproyecto-efsrt%3E/static/media/hmbg2.f5541d44f88eb0755ea4.jpg",
-    "index.html": "/%3Cproyecto-efsrt%3E/index.html",
-    "main.8430d7b2.css.map": "/%3Cproyecto-efsrt%3E/static/css/main.8430d7b2.css.map",
-    "main.20f268c6.js.map": "/%3Cproyecto-efsrt%3E/static/js/main.20f268c6.js.map",
-    "453.edeae866.chunk.js.map": "/%3Cproyecto-efsrt%3E/static/js/453.edeae866.chunk.js.map"
+    "main.css": "/proyecto-efsrt/static/css/main.8430d7b2.css",
+    "main.js": "/proyecto-efsrt/static/js/main.350aae43.js",
+    "static/js/453.edeae866.chunk.js": "/proyecto-efsrt/static/js/453.edeae866.chunk.js",
+    "static/media/hamburguesa.png": "/proyecto-efsrt/static/media/hamburguesa.656b761655e8b5ef5de6.png",
+    "static/media/icono burger.png": "/proyecto-efsrt/static/media/icono burger.09bfd5f456b580c0f788.png",
+    "static/media/Debarrio.jpg": "/proyecto-efsrt/static/media/Debarrio.85f57a3cc7b8b02dc9f5.jpg",
+    "static/media/hmbg1.jpg": "/proyecto-efsrt/static/media/hmbg1.9101999ae87cc0deebf4.jpg",
+    "static/media/hmbg3.jpg": "/proyecto-efsrt/static/media/hmbg3.8d835bca825ceb82368f.jpg",
+    "static/media/hmbg4.jpg": "/proyecto-efsrt/static/media/hmbg4.85660be2057618284a35.jpg",
+    "static/media/hmbg2.jpg": "/proyecto-efsrt/static/media/hmbg2.f5541d44f88eb0755ea4.jpg",
+    "index.html": "/proyecto-efsrt/index.html",
+    "main.8430d7b2.css.map": "/proyecto-efsrt/static/css/main.8430d7b2.css.map",
+    "main.350aae43.js.map": "/proyecto-efsrt/static/js/main.350aae43.js.map",
+    "453.edeae866.chunk.js.map": "/proyecto-efsrt/static/js/453.edeae866.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8430d7b2.css",
-    "static/js/main.20f268c6.js"
+    "static/js/main.350aae43.js"
   ]
 }
